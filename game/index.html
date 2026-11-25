@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Skillet — a tiny diner rush</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #241407; }
+  body { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  #game { display: block; touch-action: none; border-radius: 6px; box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55); }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800" aria-label="Sizzle and Skillet: a cooking game. Read the order tickets, grill patties, eggs and bacon in their golden window, stack each dish bottom to top, and serve it before the customer's patience runs out."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
